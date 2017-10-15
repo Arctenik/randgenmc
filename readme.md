@@ -1,4 +1,4 @@
-An app for making (semi-) random text generators in Minecraft. This is mainly for instructions on how to create generators, so there's some other info in the [Planet Minecraft post](https://www.planetminecraft.com/mod/random-text-using-functions/).
+An app for making (semi-) random text generators in Minecraft. This is mainly for instructions on how to create generators, so there's some other info in the [Planet Minecraft post](https://www.planetminecraft.com/mod/text-generation-using-functions/).
 
 Generators can be created as plain text files written in a simple language (inspired by [RandomGen](http://orteil.dashnet.org/randomgen/)). This example shows everything that the language can do:
 
