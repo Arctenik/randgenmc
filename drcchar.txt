@@ -1,0 +1,663 @@
+$startconsonant
+b
+bl
+br
+bw
+c
+cl
+cr
+cw
+d
+dr
+dw
+f
+fl
+fr
+g
+gl
+gr
+gw
+h
+j
+k
+kl
+kr
+kw
+l
+m
+n
+p
+pl
+pr
+qu
+r
+s
+sc
+sk
+sl
+sm
+sn
+sp
+st
+sw
+t
+tr
+tw
+v
+w
+x
+y
+z
+
+$startconsonantcap
+B
+Bl
+Br
+Bw
+C
+Cl
+Cr
+Cw
+D
+Dr
+Dw
+F
+Fl
+Fr
+G
+Gl
+Gr
+Gw
+H
+J
+K
+Kl
+Kr
+Kw
+L
+M
+N
+P
+Pl
+Pr
+Qu
+R
+S
+Sc
+Sk
+Sl
+Sm
+Sn
+Sp
+St
+Sw
+T
+Tr
+Tw
+V
+W
+X
+Y
+Z
+
+$endconsonant
+b
+bs
+bz
+c
+cs
+d
+ds
+dz
+f
+ft
+g
+gs
+gz
+h
+j
+k
+ks
+l
+lb
+lc
+ld
+lg
+lk
+lm
+ln
+lp
+ls
+lt
+lv
+lz
+m
+ms
+mz
+mp
+n
+nc
+nd
+ng
+nk
+ns
+nt
+nz
+p
+ps
+pt
+r
+rb
+rc
+rd
+rg
+rk
+rl
+rm
+rn
+rp
+rs
+rt
+rv
+rz
+s
+sc
+sk
+sp
+st
+t
+ts
+v
+vs
+w
+wb
+wc
+wd
+wf
+wg
+wk
+wl
+wm
+wn
+wp
+ws
+wt
+wz
+x
+y
+z
+
+$vowelletter
+a
+e
+i
+o
+u
+
+$vowellettercap
+A
+E
+I
+O
+U
+
+$vowel
+[vowelletter]
+[vowelletter][vowelletter]
+
+$vowelcap
+[vowellettercap]
+[vowellettercap][vowelletter]
+
+$syllable
+[vowel]
+[vowel][endconsonant]
+[startconsonant][vowel][endconsonant]
+[startconsonant][vowel]
+
+$syllablecap
+[vowelcap]
+[vowelcap][endconsonant]
+[startconsonantcap][vowel][endconsonant]
+[startconsonantcap][vowel]
+
+$name
+[syllablecap]
+[syllablecap][syllable]
+[syllablecap][syllable][syllable]
+
+
+$adjective
+adorable
+acidic
+annoying
+awesome
+beautiful
+boring
+bouncy
+crazy
+evil
+giant
+invisible
+little
+magical
+majestic
+
+$color
+red
+orange
+yellow
+green
+cyan
+blue
+purple
+magenta
+pink
+black
+gray
+white
+brown
+
+$pattern
+striped
+spotted
+swirly
+[color] and [color] striped
+[color]-spotted [color]
+[color]-swirled [color]
+glowing [color]
+light [color]
+dark [color]
+sparkly [color]
+
+$patterncolor
+[color]
+[color]
+[color]
+[color]
+[color]
+[color]
+[pattern]
+
+$noununcountable
+water
+lava
+sand
+gravel
+
+$nouncountable
+cake
+pumpkin
+diamond
+bone
+feather
+stick
+slimeball
+cookie
+cloud
+pickaxe
+machine
+soul
+bucket
+star
+minecart
+tree
+vine
+
+$concept
+adventure
+anger
+battle
+beauty
+boredom
+darkness
+death
+deception
+despair
+destiny
+destruction
+discord
+doom
+evil
+fortune
+fury
+greed
+happiness
+hope
+imagination
+justice
+knowledge
+life
+light
+love
+madness
+magic
+mercy
+nature
+power
+rage
+revenge
+science
+sepulchritude
+silence
+slaughter
+strife
+victory
+war
+wealth
+wrath
+
+$verbagent
+annihilator
+bouncer
+decorator
+destroyer
+devourer
+eater
+eradicator
+exterminator
+igniter
+illuminator
+jiggler
+mutilator
+zapper
+
+$structure
+altar
+arena
+castle
+farm
+fortress
+house
+island
+mansion
+mineshaft
+palace
+pyramid
+railway
+restaurant
+ship
+roller coaster
+shop
+shrine
+statue
+temple
+tower
+tunnel
+village
+
+$thingdiversity
+almost every sort of
+a rare kind of
+an unusual sort of
+one of the most common types of
+
+$occupation
+cheerleader
+clerk
+waiter
+builder
+miner
+pixel artist
+
+$contraption
+[contraptionprefix][contraptionsuffix]
+[contraptionprefix][contraptionprefix][contraptionsuffix]
+
+$contraptionprefix
+[nouncountable]
+techno
+fluzzer
+tele
+zanzipto
+ecto
+bio
+cogno
+epto
+flecto
+logi
+
+$contraptionsuffix
+tron
+matic
+fier
+mizer
+matrix
+rator
+trap
+
+
+$biome
+plains
+forest
+mesa
+desert
+savannah
+ocean
+extreme hills
+taiga
+mega taiga
+ice plains
+beach
+cold taiga
+swamp
+river
+jungle
+roofed forest
+mushroom
+
+$placestructure
+abandoned mineshaft
+dungeon
+stronghold
+Nether fortress
+ocean monument
+desert temple
+village
+jungle temple
+witch hut
+[specialstructure]
+
+$specialstructure
+[adjective] [structure]
+[structure] of [concept]
+
+$properplace
+Chibawkia
+MooTech
+Rana's Froggy Clothing Shop
+the Evil Village
+Viney Tacos
+the Mystical Valley
+the Nether
+the End
+the Void
+
+$improperplace
+[biome] biome
+[placestructure]
+
+$improperplacename
+a certain [improperplace]
+
+$place
+[properplace]
+[improperplacename]
+
+$thing
+Anti-Cake-Stealer
+Repair-O-Tron
+voidcart
+portabal
+[contraption]
+frog outfit
+cyan potion
+evil block-eating monster egg
+fluzzerbunny egg
+pet
+meal from Viney Tacos
+
+
+$mob
+winged squid
+chicken
+cow
+horse
+ocelot
+pig
+sheep
+bat
+mooshroom
+squid
+villager
+rabbit
+snow golem
+furtherman
+cycleman
+enderman
+cave spider
+spider
+wolf
+zombie pigman
+iron golem
+redhound
+araknid
+cakepecker
+evil block-eating monster
+fireball-shooting squid
+blaze
+creeper
+endermite
+ghast
+magma cube
+silverfish
+skeleton
+slime
+spider jockey
+witch
+wither skeleton
+zombie
+zombie villager
+chicken jockey
+guardian
+elder guardian
+ender dragon
+wither
+giant
+fluzzerbunny
+
+
+$ofthing
+the [biome]
+the [placestructure]
+[properplace]
+
+$honorific
+Lord
+Lady
+Mx.
+Mr.
+Miss
+Ms.
+Mrs.
+Dr.
+Professor
+
+$position
+lord
+lady
+monarch
+king
+queen
+parent
+father
+mother
+
+$genderperson
+person
+man
+guy
+woman
+girl
+
+$thingperson
+[adjective] [genderperson]
+[adjective][genderperson]
+[nouncountable] [genderperson]
+[nouncountable][genderperson]
+
+$fullname
+[name]
+[name] [name]
+[honorific] [name]
+[name] of [ofthing]
+[thingperson]
+The [thingperson]
+[honorific] [nouncountable]
+[honorific] [adjective]
+The [verbagent]
+[honorific] [verbagent]
+The [adjective] [verbagent]
+The [verbagent] of [concept]
+The [position] of [concept]
+The [adjective] [position]
+
+
+$greeting
+Hi
+Hello
+Howdy
+Greetings
+Why, hello
+Salutations
+Hey there
+
+$endpunct
+.
+!
+
+$bodypart
+skin
+eyes
+
+$charactergeneral
+I'm a sort of [mob]
+I resemble a humanoid [mob]
+I look like a player
+
+$characterdetails
+with [patterncolor] [bodypart]
+with [patterncolor] [bodypart] and [patterncolor] [bodypart]
+covered in [noununcountable]
+with a little [nouncountable] at every point on my body
+
+$characterdetailsmaybe
+
+\ [characterdetails]
+
+$factiondesc
+I'm a citizen of Chibawkia.
+I'm aligned with Herobrine's group.
+I'm involved in the siege on Chibawkia.
+I'm a subject of Entity 303.
+I haven't gotten involved in any major conflict.
+
+$hobbyintro
+[jobdescription], and in my free time I
+As a hobby, I
+
+$jobdescription
+I do [occupation] work in [place]
+
+$characteractivity
+build all sorts of [structure] constructions
+build [adjective] [structure] constructions
+build [adjective] structures
+construct contraptions such as the [contraption]
+go exploring in a new [improperplace] every so often
+go adventuring in a new [improperplace] every so often
+sell [thingdiversity] [thing]
+
+
+$charintro
+<[fullname]> [greeting][endpunct] [charactergeneral][characterdetailsmaybe], and [factiondesc] [hobbyintro] [characteractivity].

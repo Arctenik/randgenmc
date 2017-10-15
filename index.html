@@ -1,0 +1,79 @@
+
+
+<title>RandGenMC</title>
+
+
+<style>
+
+body {
+	font-family: sans-serif;
+}
+
+#xInp, #yInp, #zInp, #tellrawLengthInp, #genListNumInp {
+	width: 4em;
+}
+
+.hidden {
+	display: none;
+}
+
+</style>
+
+
+Instructions: Select your generator file, use the "Generate" button to test your generator if you want to, change the options if you need to, press the "Convert" button to download the function files.
+<br><br>
+Works best with Chrome or Firefox.
+<br><br>
+Example generator files: <a href="drcplot.txt">Dr. Chibawk plot</a>, <a href="drcchar.txt">Dr. Chibawk character</a>
+<br><br>
+More info on <a target="_blank" href="https://www.planetminecraft.com/mod/random-text-using-functions/">Planet Minecraft</a> and <a target="_blank" href="https://github.com/Zatnik/randgenmc">GitHub</a>.
+<br><br><br>
+<input type="file" id="fileInp">
+<br><br>
+Namespace: <input type="text" id="namespaceInp">
+<br><br>
+Armor stand coordinates:
+<input type="text" id="xInp" value="~">
+<input type="text" id="yInp" value="300">
+<input type="text" id="zInp" value="~">
+<br><br>
+Make final <input type="number" id="genListNumInp" value="1"> lists available for generating
+<br><br>
+Maximum number of text pieces: <input type="number" id="tellrawLengthInp"> (you can probably ignore this)
+<br><br>
+Provide lists as:
+<br><br>
+<input type="checkbox" id="provideTellrawInp" checked> Tellraw
+<br><br>
+<input type="checkbox" id="provideBookInp"> Book
+<br>
+<div id="tellrawOptionsElem">
+	<br>
+	Tellraw selector: <input type="text" id="tellrawSelectorInp" value="@a">
+</div>
+<div id="bookOptionsElem" class="hidden">
+	<br>
+	Give book to: <input type="text" id="bookSelectorInp" value="@p">
+	<br><br>
+	Book title: <input type="text" id="bookTitleInp" value="A book">
+	<br><br>
+	Book author: <input type="text" id="bookAuthorInp" value="someone">
+</div>
+<br><br>
+<button id="convertButton">Convert</button>
+<br><br>
+<div id="exportedMessage" class="hidden">
+	Exported functions <span id="exportedList"></span>
+	<br>
+</div>
+<br><br>
+Test generating from: <select id="generateFromInp"></select>
+<br><br>
+<button id="runButton">Generate</button>
+<br><br>
+<div id="runOutputElem"></div>
+
+
+<script src="../../jszip.min.js"></script>
+<script src="randgenmc-parser.js"></script>
+<script src="randgenmc.js"></script>

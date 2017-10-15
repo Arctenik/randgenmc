@@ -1,0 +1,394 @@
+$action
+gets a pet [mob]
+buys a cool [thing]
+reads a book [bookdesc]
+kills a random [mob]
+uses a special [thinguseable]
+goes adventuring in [place]
+eats at Viney Tacos
+builds a masterful [specialstructure]
+[placeaction] [place]
+
+$interaction
+[interactiongood]
+[interactionneutral]
+[interactionbad]
+
+$interactiongood
+gives a nice [thing] as a present to
+throws a party for
+
+$interactionneutral
+starts a business with
+[placeaction] [place] and [meeting]
+[placeaction] [place] with
+reads a book [bookdesc] to
+talks to
+[meeting]
+
+$interactionbad
+attacks
+sends a terrifying [mob] to attack
+imprisons
+steals a random [thing] from
+stalks
+
+$meeting
+pretends to run into
+meets
+has a meeting with
+confronts
+has lunch with
+goes fishing with
+goes on a date with
+goes exploring with
+goes mining with
+
+$placeaction
+goes to a party in
+goes adventuring in
+explores
+rides a voidcart to
+
+$disaster
+[character] comes barging in
+a horrifyingly [adjective] [mob] appears
+a creature known as the [mob] of [concept] attacks
+a dangerously [adjective] [mob] horde attacks
+[character] appears and [interactionbad] our hero
+
+$exceptionmaybe
+.
+, [exception]!
+
+$exception
+but then [disaster]
+but everything goes wrong when [disaster]
+
+
+$character
+[endcharacter]
+[goodcharacter]
+[monsterscharacter]
+[nethercharacter]
+[neutralcharacter]
+
+$endcharacter
+Dr. Chibawk
+Emerald Glass
+the Ghost Warrior
+the Vineman
+Israphel
+Mr. Jones
+the Mushroom Man
+Rana
+Sombre
+Jhounny
+
+$goodcharacter
+Herobrine
+the Cultivator
+Skylar
+Meran
+Dolent
+the Forger
+Heropiggy
+
+$monsterscharacter
+Lesto
+
+$nethercharacter
+Entity 303
+TacoMan
+username666
+Repierk
+Matida
+Zoanna
+
+$neutralcharacter
+Dieamond
+Bob
+Happyguy
+Henrietta
+Henry
+the Horse of Doom
+Patricia Piggleton
+Herobecky
+Herobrian
+
+
+$mob
+winged squid
+chicken
+cow
+horse
+ocelot
+pig
+sheep
+bat
+mooshroom
+squid
+villager
+rabbit
+snow golem
+furtherman
+cycleman
+enderman
+cave spider
+spider
+wolf
+zombie pigman
+iron golem
+redhound
+araknid
+cakepecker
+evil block-eating monster
+fireball-shooting squid
+blaze
+creeper
+endermite
+ghast
+magma cube
+silverfish
+skeleton
+slime
+spider jockey
+witch
+wither skeleton
+zombie
+zombie villager
+chicken jockey
+guardian
+elder guardian
+ender dragon
+wither
+giant
+fluzzerbunny
+
+
+$book
+book [bookdesc]
+
+$bookdesc
+written by [character]
+called "[booktitle]"
+
+$booktitle
+The [adjective] [mob]
+The story of [character] and the [specialstructure]
+Ad for an awesome [thing]
+The [adjective] [mob] of [concept] and [concept]
+
+$thing
+[thinguseable]
+[thingunuseable]
+
+$thinguseable
+Anti-Cake-Stealer
+Repair-O-Tron
+voidcart
+portabal
+[contraption]
+
+$thingunuseable
+frog outfit
+cyan potion
+evil block-eating monster egg
+fluzzerbunny egg
+pet
+meal from Viney Tacos
+
+$place
+Chibawkia
+MooTech
+Rana's Froggy Clothing Shop
+the Evil Village
+Viney Tacos
+the Mystical Valley
+the Nether
+the End
+the Void
+a random [biome] biome
+a random [placestructure]
+
+$biome
+plains
+forest
+mesa
+desert
+savannah
+ocean
+extreme hills
+taiga
+mega taiga
+ice plains
+beach
+cold taiga
+swamp
+river
+jungle
+roofed forest
+mushroom
+
+$placestructure
+abandoned mineshaft
+dungeon
+stronghold
+Nether fortress
+ocean monument
+desert temple
+village
+jungle temple
+witch hut
+[specialstructure]
+
+
+$adjective
+adorable
+acidic
+annoying
+awesome
+beautiful
+boring
+bouncy
+crazy
+evil
+giant
+invisible
+little
+magical
+majestic
+
+$noun
+cake
+pumpkin
+diamond
+bone
+feather
+stick
+slimeball
+cookie
+cloud
+pickaxe
+machine
+soul
+bucket
+star
+minecart
+tree
+vine
+
+$concept
+adventure
+anger
+battle
+beauty
+boredom
+darkness
+death
+deception
+despair
+destiny
+destruction
+discord
+doom
+evil
+fortune
+fury
+greed
+happiness
+hope
+imagination
+justice
+knowledge
+life
+light
+love
+madness
+magic
+mercy
+nature
+power
+rage
+revenge
+science
+sepulchritude
+silence
+slaughter
+strife
+victory
+war
+wealth
+wrath
+
+$structure
+altar
+arena
+castle
+farm
+fortress
+house
+island
+mansion
+mineshaft
+palace
+pyramid
+railway
+restaurant
+ship
+roller coaster
+shop
+shrine
+statue
+temple
+tower
+tunnel
+village
+
+$specialstructure
+[adjective] [structure]
+[structure] of [concept]
+
+$contraption
+[contraptionprefix][contraptionsuffix]
+[contraptionprefix][contraptionprefix][contraptionsuffix]
+
+$contraptionprefix
+[noun]
+techno
+fluzzer
+tele
+zanzipto
+ecto
+bio
+cogno
+epto
+flecto
+logi
+
+$contraptionsuffix
+tron
+matic
+fier
+mizer
+matrix
+rator
+trap
+
+
+$plot
+In this story, [character] [interaction] [character][exceptionmaybe]
+In this story, [character] [action][exceptionmaybe]
+A plan is devised in which [character] [interaction] [character], but the plan is thwarted by [character]!
+A plan is devised in which [character] [action], but the plan is thwarted by [character]!
+In this story, [character] [interaction] [character], who then [action]! What will our hero do??
+In this story, [character] [action], not expecting any trouble, [exception]!
+A mysterious message says that if [character] [action], a special [thing] will be provided as a reward. What will our hero choose to do?
+Every time [character] [action], [disaster]! What will our hero do about this?
+Somehow, [place] has gotten a terrible [mob] infestation! This is discovered by [character], who [placeaction] there and [interaction] the nearest one!
+All the factions are horrified when a dangerously [adjective] and [adjective] [mob] shows up and [action]! A team must be formed from [endcharacter], [goodcharacter], [monsterscharacter], and [nethercharacter], who go to defeat this foe.
+It's a pleasant surprise when [character] [interactiongood] [character] -- [exception]!
+In this story, [character] [placeaction] [place]. Upon arrival, our hero observes as [character] [interaction] [character]!
+
+$plotmessage
+\[Plot\] [plot]
