@@ -27,11 +27,7 @@ In that example generator, there are three lists - "color", "thing", and "statem
 
 The only other thing you might need to know is the you can prefix any character with a backslash to make that character appear as written; for example `\[brackets\]` will appear as "[brackets]" in the generator output. Another notable place where this is useful is when you want to put a space at the beginning or end of a list item.
 
-<<<<<<< HEAD
-Generator files can be converted to .mcfunction files using this page: https://arctenik.github.io/randgenmc/
-=======
-Generator files can be converted to .mcfunction files for Minecraft 1.12 using this page: https://zatnik.github.io/randgenmc/
->>>>>>> origin/master
+Generator files can be converted to .mcfunction files for Minecraft 1.12 using this page: https://arctenik.github.io/randgenmc/
 
 The converter can provide generators as either tellraw messages or as `give` commands for written books; be careful with the books, though, because you have to open the book before generating anything else in order for it to work.
 
